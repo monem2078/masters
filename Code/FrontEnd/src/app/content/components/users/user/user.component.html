@@ -1,0 +1,74 @@
+<m-portlet [options]="{headLarge: true}">
+	<!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text">
+				User Add
+			</h3>
+		</div>
+	</ng-container>
+	<ng-container mPortletHeadTools>
+
+	</ng-container>
+	<!-- end::Header -->
+
+	<!-- start::Body (attribute: mPortletBody) -->
+	<ng-container mPortletBody>
+		<form class="m-form m-form--fit m-form--label-align-right" novalidate #userForm="ngForm" (ngSubmit)="save(userForm)">
+			<div class="form-group m-form__group m--padding-top-15 row">
+				<div class="col-lg-2 col-md-4">
+					<label>Name *</label></div>
+				<div class="col-lg-8 col-xs-12">
+					<input type="text" placeholder="Name" class="form-control" id="name" name="name" [(ngModel)]="user.name" #name="ngModel" required>
+					<div class="error form-control-feedback" [hidden]="!hasError(userForm,'name', 'required')">Name is Required</div>
+				</div>
+			</div>
+			<div class="form-group m-form__group m--padding-top-15 row">
+				<div class="col-lg-2 col-md-4">
+					<label>Username *</label></div>
+				<div class="col-lg-8 col-xs-12">
+					<input type="text" placeholder="Username" class="form-control" id="username" name="username" [(ngModel)]="user.username" #username="ngModel" required>
+					<div class="error form-control-feedback" [hidden]="!hasError(userForm,'username', 'required')">Username is Required</div>
+				</div>
+			</div>
+			<div class="form-group m-form__group m--padding-top-15 row">
+				<div class="col-lg-2 col-md-4">
+					<label>Email*</label></div>
+				<div class="col-lg-8 col-xs-12">
+					<input type="text" placeholder="Email" class="form-control" id="email" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" [(ngModel)]="user.email" #email="ngModel" email="true" required>
+					<div class="error form-control-feedback" [hidden]="!hasError(userForm,'email', 'required')">Email is Required</div>
+					<div class="error  form-control-feedback" [hidden]="!hasError(userForm,'email', 'pattern')">Wrong Email Format </div>
+				</div>
+			</div>
+			<div class="form-group m-form__group m--padding-top-15 row">
+					<div class="col-lg-2 col-md-4">
+						<label>Password*</label></div>
+					<div class="col-lg-8 col-xs-12">
+						<input type="password" placeholder="Password" class="form-control" id="password" name="password"  [(ngModel)]="user.password" #password="ngModel" required>
+						<div class="error form-control-feedback" [hidden]="!hasError(userForm,'password', 'required')">password is Required</div>
+					</div>
+				</div>
+			<div class="form-group m-form__group m--padding-top-15 row">
+				<div class="col-lg-2 col-md-4">
+					<label>Role*</label></div>
+				<div class="col-lg-8 col-xs-12">
+					<ng-select [searchable]="true"  [(ngModel)]="user.role_id" name="role" #role="ngModel"  required>
+						<ng-option *ngFor="let role of roles" [value]="role.id">{{role.role_name}}</ng-option>
+					</ng-select>
+					<div class="error form-control-feedback" [hidden]="!hasError(userForm,'role', 'required')">Role is Required</div>
+				</div>
+
+			</div>
+
+			<div class="form-group m-form__group row">
+				<button type="submit" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill" [disabled]="submitted"> Save <i class="fa fa-check" aria-hidden="true"></i></button>
+				<button (click)="redirect()" type="button" class="btn m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill m--margin-left-10"> Cancel </button>
+			</div>
+
+		</form>
+
+
+		<!-- end: BOTTOM -->
+	</ng-container>
+	<!-- end::Body -->
+</m-portlet>

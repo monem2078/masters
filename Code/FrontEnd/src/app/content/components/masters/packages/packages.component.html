@@ -1,0 +1,83 @@
+<div class="col-md-12 m--align-right mb-3 p-0">
+        <a class="btn  filter-submit margin-bottom primary-btn   btn-sm" (click)="addSection()">
+                <i class="la la-plus"></i>Add New Package </a>
+</div>
+<form class="m-form m-form--fit m-form--label-align-right" id="master-form" novalidate #masterForm="ngForm" (ngSubmit)="update(masterForm)">
+    <div class="packages">
+        <div class="package" *ngFor="let package of master.packages; let i = index">
+	<div class="col-12 text-right mt-3 p-0">
+						<a class="btn btn-danger m-btn--icon m-btn--icon-only m-btn--custom" (click)="sendData()" (click)="deleteSection(i)">
+							<i class="la la-times"></i>
+						</a>
+					</div>
+        <div class="form-group m-form__group">
+                <label for="category_id">Category</label>
+                <ng-select id="{{ 'category_name'+i }}" name="{{ 'category_name'+i }}" [items]="category"
+                bindLabel="category_name"
+                bindValue="id"
+                placeholder="Select Category"
+                [(ngModel)]="package.category_id">
+                </ng-select>
+            <div class="error text-danger form-control-feedback" [hidden]="!hasError(masterForm,'category_name'+i, 'required')">Category
+                is Required</div>
+        </div>
+
+        <div class="form-group m-form__group">
+                <label for="title">Package Name</label>
+                <input type="text" required #package_name="ngModel" name="{{'package_name'+i}}" id="{{'package_name'+i}}" class="form-control m-input m-input--solid" (change)="sendData()" [(ngModel)]="package.title"  aria-describedby="JobtitleHelp" placeholder="Enter Package title">
+                <div class="error text-danger form-control-feedback" [hidden]="!hasError(masterForm,'package_name'+i, 'required')">Package Name
+                    is Required
+                </div>
+        </div>
+                
+                <div class="form-group m-form__group">
+                        <label for="price">Package Price</label>
+                        <div class="row">
+                            <div class="col">
+                                <input required type="number" #price="ngModel" onkeypress="return event.charCode >= 48" min="0" (change)="sendData()" name="{{'price'+i}}" id="{{'price'+i}}" [(ngModel)]="package.price" class="form-control m-input m-input--solid"  aria-describedby="JobtitleHelp" placeholder="Enter Package Price">
+                                <div class="error text-danger form-control-feedback" [hidden]="!hasError(masterForm,'price'+i, 'required')">Price
+                                    is Required
+                                </div>
+                            </div>
+
+                                <div class="col">
+                                        <ng-select [items]="currency"
+                                        bindLabel="currency_name"
+                                        bindValue="id"
+                                        (change)="sendData()"
+                                         name="{{'currency'+i}}"
+                                         id="{{'currency'+i}}"
+                                        placeholder="Select currency"
+                                        [(ngModel)]="package.currency_id">
+                                        </ng-select>
+                                </div>
+
+                                <div class="error text-danger form-control-feedback" [hidden]="!hasError(masterForm,'currency'+i, 'required')">Currency
+                                    is Required
+                                </div>
+                        </div>
+                </div>
+                    <div class="form-group m-form__group">
+                            <label for="description">Package Description</label>
+                            <textarea required #description="ngModel" name="{{'description'+i}}" (change)="sendData()" class="form-control m-input m-input--solid" id="{{'description'+i}}" [(ngModel)]="package.description" rows="3"></textarea>
+                            <div class="error text-danger form-control-feedback" [hidden]="!hasError(masterForm,'description'+i, 'required')">Package Description
+                                is Required
+                            </div>
+                    </div>
+                       
+                </div>       
+</div>
+</form>
+
+<ng-container mPortletFooter>
+    <div class="row align-items-center">
+        <div class="col">
+            <button type="submit" class="btn btn-primary" form="master-form" [disabled]="submitted" >Update Profile Data</button>
+            <a [routerLink]="['/masters']" class="btn btn-secondary">Cancel</a>
+        </div>
+        <div class="col">
+            <a  (click)="delete(master.id)" class="btn btn-danger">Delete User</a>
+        </div>
+    </div>
+</ng-container>
+

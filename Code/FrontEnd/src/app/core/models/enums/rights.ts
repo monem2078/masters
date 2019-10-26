@@ -1,0 +1,8 @@
+export enum Right {
+	ROLESLIST = 1,
+	ROLESADD = 2,
+	ROLESEDIT= 3,
+	USERSLIST = 4,
+	USERSADD = 5,
+	USERSEDIT = 6
+}

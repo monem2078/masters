@@ -1,0 +1,266 @@
+<div class="master-list">
+
+
+
+</div>
+
+<m-portlet [options]="{headLarge: true}">
+        <!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+        <ng-container mPortletHeadTitle>
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                    Masters list
+                </h3>
+            </div>
+        </ng-container>
+        <ng-container mPortletHeadTools>
+				<button type="button" class="btn btn-secondary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">Filter</button>
+        </ng-container>
+        <!-- end::Header -->
+
+
+		<ng-container mPortletBody>
+				<div class="row" id="collapseExample" [ngbCollapse]="!isCollapsed">
+					<div class="m-form col-md-12">
+							<form class="row" novalidate #userForm="ngForm" (ngSubmit)="getMasters()">
+
+								<table class="table table-bordered table-hover">
+									<thead class="">
+										<tr>
+												<th>Full Name</th>
+												<th>Job Title</th>
+												<th>Rating From</th>
+												<th>Rating To</th>
+												<th>Source </th>
+												<th>OS </th>
+												<th>OS Version </th>
+												<th>Country</th>
+												<th> City</th>
+												<th> operations</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+													<input type="text" [(ngModel)]="model.masterSearch" placeholder="Name" class="form-control form-filter input-sm" id="name" name="name" [ngbTypeahead]="searchMasters" [resultFormatter]="MasterFormatter" (ngModelChange)="onMasterChange($event)"  #clientinstance="ngbTypeahead"  >
+													<span *ngIf="masterSearching">search...</span>
+													<div class="invalid-feedback" *ngIf="masterSearchFailed">Sorry, No Masters</div>
+											</td>
+											<td>
+													<input type="text" placeholder="Job Title" [(ngModel)]="filterObject.SearchObject.headline" class="form-control form-filter input-sm" id="headline" name="headline">
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="Rating From" name="rating_from" [(ngModel)]="filterObject.SearchObject.rating_from">
+													<option disabled="" [ngValue]="undefined">Rating From</option>
+													<option value = "1"> 1 </option>
+													<option value="2"> 2 </option>
+													<option value="3"> 3 </option>
+													<option value="4"> 4 </option>
+													<option value="5"> 5 </option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="Rating To" name="rating_to" [(ngModel)]="filterObject.SearchObject.rating_to">
+													<option disabled="" [ngValue]="undefined">Rating To</option>
+													<option value="1"> 1 </option>
+													<option value="2"> 2 </option>
+													<option value="3"> 3 </option>
+													<option value="4"> 4 </option>
+													<option value="5"> 5 </option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="Source" name="source" [(ngModel)]="filterObject.SearchObject.source">
+													<option disabled="" [ngValue]="undefined">Source</option>
+													<option [ngValue]="null">All</option>
+													<option> Facebook </option>
+													<option> Twitter </option>
+													<option> Linkedin </option>
+													<option> Google </option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="OS" name="os" [(ngModel)]="filterObject.SearchObject.platform_id">
+													<option disabled="" [ngValue]="undefined">OS</option>
+													<option [ngValue]="null">All</option>
+													<option *ngFor="let platform of platforms" value="{{ platform.id }}"> {{ platform.platform_name }} </option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="OS Version" name="os_version" [(ngModel)]="filterObject.SearchObject.os_version">
+													<option disabled="" [ngValue]="undefined">OS</option>
+													<option [ngValue]="null">All</option>
+													<option *ngFor="let x of counter(10); let i = index">{{i+1}}</option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="Country" (change)="getCities()"  name="country" [(ngModel)]="filterObject.SearchObject.country_id">
+													<option disabled="" [ngValue]="undefined">Country</option>
+													<option [ngValue]="null">All</option>
+													<option [ngValue]="country.id" *ngFor="let country of countries">{{country.country_name}}</option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-filter input-sm" placeholder="City" name="city" [(ngModel)]="filterObject.SearchObject.city_id">
+													<option disabled="" [ngValue]="undefined">City</option>
+													<option [ngValue]="null">All</option>
+													<option [ngValue]="city.id" *ngFor="let city of cities">{{city.city_name}}</option>
+												</select>
+											</td>
+<!--											<td width="200">-->
+<!--													&lt;!&ndash; <ng-select class="" [searchable]="true" >-->
+<!--															<ng-option *ngFor="let role of roles" [value]="role.id">{{role.role_name}}</ng-option>-->
+<!--														</ng-select> &ndash;&gt;-->
+<!--											</td>-->
+											<td>
+												<div class="margin-bottom-5 in-b  serchbtnMar">
+														<button type="submit" class="btn btn-primary m-btn--icon mr-2"> <i class="la la-search"></i> Search</button>
+														<button type="button" class="btn btn-secondary m-btn--icon" (click)=resetSearch()> <i class="la la-close"></i>Reset</button>
+
+												</div>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+					</div>
+				</div>
+		</ng-container>
+
+        <!-- start::Body (attribute: mPortletBody) -->
+        <ng-container mPortletBody>
+                <div class="mat-table__wrapper">
+                    <mat-table class="lmat-elevation-z8" [dataSource]="dataSource" matSort >
+
+						<!-- Position Column -->
+
+
+
+				<ng-container matColumnDef="name">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header> Master </mat-header-cell>
+                        <mat-cell *matCellDef="let master" class="mat-column-email">
+
+							<!--begin::Widget 14-->
+							<div class="m-widget4">
+
+									<!--begin::Widget 14 Item-->
+									<div class="m-widget4__item">
+										<div class="m-widget4__img m-widget4__img--pic">
+											<img *ngIf="master.profile_image_url != null" [src]="environment.imagesBaseURL + master.profile_image_url" alt="">
+											<img *ngIf="master.profile_image_url == null" src="./assets/app/media/img/users/100_1.jpg" alt="">
+										</div>
+										<div class="m-widget4__info">
+											<span class="m-widget4__title">
+													{{master.name}}
+
+											</span><br>
+											<span class="m-widget4__sub">
+													{{master.headline}}
+											</span>
+										</div>
+									</div>
+									<!--end::Widget 14 Item-->
+
+								</div>
+
+								<!--end::Widget 14-->
+
+
+							<img src="" alt="" srcset="">
+
+
+                        </mat-cell>
+                    </ng-container>
+
+
+                       <!-- Job Title Column -->
+				<ng-container matColumnDef="mobile_no">
+						<mat-header-cell *matHeaderCellDef > Mobile </mat-header-cell>
+						<mat-cell *matCellDef="let master">
+							{{master.mobile_no}}
+						</mat-cell>
+					</ng-container>
+
+				<!-- Rating Column -->
+				<ng-container matColumnDef="overall_rating">
+						<mat-header-cell *matHeaderCellDef mat-sort-header> Rating </mat-header-cell>
+						<mat-cell *matCellDef="let master">
+								<span class="m-widget3__status m--font-brand">
+										<i class="fa fa-star"></i>
+										</span>
+							{{master.overall_rating}}
+						</mat-cell>
+					</ng-container>
+
+
+					<!-- Source Column -->
+				<ng-container matColumnDef="os_version">
+						<mat-header-cell *matHeaderCellDef mat-sort-header> Source </mat-header-cell>
+						<mat-cell  *matCellDef="let master">
+								<span class="m-widget3__status m--font-info">
+										<i *ngIf="master.oauth_provider == 'facebook'" class="fab fa-facebook"></i>
+								 		<i *ngIf="master.oauth_provider == 'linkedin'" class="fab fa-linkedin"></i>
+								 		<i *ngIf="master.oauth_provider == 'twitter'" class="fab fa-twitter"></i>
+								 		<i *ngIf="master.oauth_provider == 'google'" class="fab fa-google"></i>
+										</span>
+
+							{{master.oauth_provider}}
+						</mat-cell>
+					</ng-container>
+
+							<!-- OS Column -->
+				<ng-container matColumnDef="platform_name_ar">
+						<mat-header-cell  *matHeaderCellDef mat-sort-header> OS </mat-header-cell>
+						<mat-cell *matCellDef="let master">
+								<span class="m-widget3__status m--font-info">
+
+								<i *ngIf="master.platform_id == 2" class="fab fa-apple"></i>
+                                 <i *ngIf="master.platform_id == 1" class="fab fa-android"></i>
+										</span>
+							{{master.platform_name_ar}}
+						</mat-cell>
+					</ng-container>
+
+
+						<!-- Location Column -->
+				<ng-container matColumnDef="country_id">
+						<mat-header-cell  *matHeaderCellDef mat-sort-header> Location </mat-header-cell>
+						<mat-cell  *matCellDef="let master">
+							{{master.city_name_ar}}, {{master.country_name_ar}}
+						</mat-cell>
+					</ng-container>
+
+                        <ng-container matColumnDef="actions">
+                            <mat-header-cell *matHeaderCellDef>
+                                Actions
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let user">
+                                <button class="btn btn-primary" color="edit" type="button" [routerLink]="['/masters/edit', user.id]"  (click)="edit(user.id)" matTooltip="Edit">
+                                    Edit
+                                </button>&nbsp;
+
+                                <button class="btn btn-danger" color="warn" type="button" (click)="delete(user.id)" matTooltip="Delete">
+                                    Delete
+                                </button>
+
+
+                            </mat-cell>
+                        </ng-container>
+
+                        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+                    </mat-table>
+
+
+                </div>
+
+                <!-- start: BOTTOM -->
+                <div class="mat-table__bottom">
+                    <mat-spinner [diameter]="20" *ngIf="loading$ |async"></mat-spinner>
+                    <mat-paginator [pageSize]="pageSize" [length]="paginatorTotal$" [showFirstLastButtons]="true"></mat-paginator>
+                </div>
+            </ng-container>
+
+        <!-- end::Body -->
+    </m-portlet>

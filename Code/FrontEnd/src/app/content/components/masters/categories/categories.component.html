@@ -1,0 +1,31 @@
+<form class="m-form m-form--fit m-form--label-align-right" id="master-form" novalidate #masterForm="ngForm" (ngSubmit)="update(masterForm)">
+    <div class="categories">
+
+    <ngb-accordion activeIds="{{ selectedCategories() }}" *ngFor="let category of categories" #acc="ngbAccordion">
+        <ngb-panel id="{{ category.id }}" title="{{category.category_name_ar}}">
+            <ng-template ngbPanelContent>
+                <div class="m-checkbox-list">
+                    <label *ngFor="let sub_category of category.sub_categories" class="m-checkbox m-checkbox--solid m-checkbox--brand">
+                        <input type="checkbox" (change)="addOrRemove(sub_category.id)"  [checked]="checkSubCategory(sub_category)" (change)="sendData()"> {{ sub_category.category_name_ar }}
+                        <span></span>
+                    </label>
+                </div>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
+</form>
+
+<div style="margin-top: 5%; margin-bottom: 5%" *ngIf="errors"  class="error text-danger form-control-feedback" >{{ errors }}</div>
+
+<ng-container mPortletFooter>
+    <div class="row align-items-center">
+        <div class="col">
+            <button type="submit" class="btn btn-primary" form="master-form" [disabled]="submitted" >Update Profile Data</button>
+            <a [routerLink]="['/masters']" class="btn btn-secondary">Cancel</a>
+        </div>
+        <div class="col">
+            <a  (click)="delete(master.id)" class="btn btn-danger">Delete User</a>
+        </div>
+    </div>
+</ng-container>

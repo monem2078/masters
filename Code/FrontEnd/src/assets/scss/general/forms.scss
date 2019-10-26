@@ -1,0 +1,56 @@
+@import '../theme';
+@import '../mixins';
+
+.form-control.focus, .form-control:focus {
+	border-color: $secondary-color;
+}
+.m-form .form-control-label, .m-form label {
+	font-size: 14px;
+}
+.custom-file-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+	height: 40px;
+    padding: .7rem 1rem;
+    line-height: 1.5;
+    color: #575962;
+    pointer-events: none;
+    user-select: none;
+    background-color: #f4f5f8;
+    border: 1px solid #f4f5f8;
+	border-radius: .25rem;
+	&::before {
+		position: absolute;
+		top: -1px;
+		right: -1px;
+		bottom: -1px;
+		z-index: 6;
+		display: block;
+		height: 40px;
+        padding: .7rem 1rem;
+		line-height: 1.5;
+		color: #575962;
+		background-color: #e9ecef;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: 0 .25rem .25rem 0;
+	}
+	&:lang(en)::before {
+		content: "Browse";
+	}
+	&:lang(en):empty::after {
+		content: "Choose file...";
+		left: 20px;
+        position: absolute;
+	}
+}
+.m-form .m-form__actions{
+	border-radius: 0 0 15px 15px;
+	border-top: 1px solid #ebedf2;
+	.btn{
+		font-size: 16px;
+		padding: 2px 40px;
+	}
+}

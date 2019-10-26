@@ -1,0 +1,103 @@
+<div class="manage-master-page">
+    <m-portlet>
+        <!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+        <ng-container mPortletHeadTitle>
+
+        </ng-container>
+        <ng-container mPortletHeadTools>
+
+        </ng-container>
+        <!-- end::Header -->
+
+        <!-- start::Body (attribute: mPortletBody) -->
+        <ng-container mPortletBody>
+                         <div class="m-widget19">
+
+                <div class="m-widget19__content">
+                    <div class="m-widget19__header">
+                        <div class="m-widget19__user-img">
+                            <img class="m-widget19__img" *ngIf="master.image_url != null" [src]="environment.imagesBaseURL + master.image_url" alt="">
+                            <img class="m-widget19__img" *ngIf="master.image_url == null" src="./assets/app/media/img/users/100_1.jpg" alt="">
+                        </div>
+                        <div class="m-widget19__info">
+                            <span class="m-widget19__username">
+                                {{master.name}}
+                            </span><br>
+                            <span class="m-widget19__time">
+                                {{ master.city_name_ar }}, {{ master.country_name_ar }}
+                            </span>
+                            <br>
+                            <span class="m-widget19__time">
+                                {{ master.mobile_no }}
+                            </span>
+                        </div>
+                        <div class="m-widget19__stats px-3">
+                            <span class="m-widget19__number m--font-brand">
+                                <i *ngIf="master.oauth_provider == 'facebook'" class="fab fa-facebook"></i>
+                                <i *ngIf="master.oauth_provider == 'linkedin'" class="fab fa-linkedin"></i>
+                                <i *ngIf="master.oauth_provider == 'twitter'" class="fab fa-twitter"></i>
+                                <i *ngIf="master.oauth_provider == 'twitter'" class="fab fa-google"></i>
+                            </span>
+                            <span class="m-widget19__comment">
+                                {{ master.oauth_provider }}
+                            </span>
+                        </div>
+                        <div class="m-widget19__stats">
+                            <span class="m-widget19__number m--font-brand">
+                                <i *ngIf="master.platform_id == 2" class="fab fa-apple"></i>
+                                 <i *ngIf="master.platform_id == 1" class="fab fa-android"></i>
+                            </span>
+                            <span class="m-widget19__comment">
+                                {{ master.platform_name_ar }}
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-widget19__action">
+                    <!-- <button type="button" class="btn m-btn--pill btn-secondary m-btn m-btn--hover-brand m-btn--custom">Read More</button> -->
+                    <div class="tabsWrabber">
+
+                        <ngb-tabset>
+                            <ngb-tab title="Master Data">
+                                <ng-template ngbTabContent>
+                                    <m-master-data (notify)="getMasterDetails($event)"> </m-master-data>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Categories">
+                                <ng-template ngbTabContent>
+                                    <m-categories (category)="getCategories($event)"></m-categories>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Packages">
+                                <ng-template ngbTabContent>
+                                    <m-packages (package)="getPackages($event)"></m-packages>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Reviews">
+                                <ng-template ngbTabContent>
+                                    <m-reviews></m-reviews>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Requests">
+                                <ng-template ngbTabContent>
+                                    <m-requests></m-requests>
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
+
+                    </div>
+
+                </div>
+                 </div>
+
+            <!-- end: BOTTOM -->
+        </ng-container>
+        <!-- end::Body -->
+
+
+
+
+
+    </m-portlet>
+</div>

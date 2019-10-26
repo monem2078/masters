@@ -1,0 +1,29 @@
+<div class="reviews">
+
+    <div class="m-widget3">
+        <div class="m-widget3__item" *ngFor="let rate of master.ratings">
+            <div class="m-widget3__header">
+                <div class="m-widget3__user-img">
+                    <img *ngIf="master.image_url != null" [src]="environment.imagesBaseURL + master.image_url" alt="">
+                    <img class="m-widget3__img" *ngIf="master.image_url == null" src="./assets/app/media/img/users/100_1.jpg" alt="">
+                </div>
+                <div class="m-widget3__info">
+                    <span class="m-widget3__username">
+                        {{ rate.name }}
+                    </span><br>
+                    <span class="m-widget3__time">
+                        {{ rate.created_diff }}
+                    </span>
+                </div>
+                <span class="m-widget3__status m--font-brand">
+                    <i *ngFor="let number of rateNumber(rate.rating)" class="fa fa-star"></i>
+                </span>
+            </div>
+            <div class="m-widget3__body">
+                <p class="m-widget3__text">
+                    {{ rate.review }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

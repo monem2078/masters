@@ -1,0 +1,131 @@
+<m-portlet [options]="{headLarge: true}">
+	<!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text">
+				Category List
+			</h3>
+		</div>
+	</ng-container>
+	<ng-container mPortletHeadTools>
+
+		<button type="button" class="btn primary-btn  m--margin-right-10">
+			<i class="la la-plus"></i>
+			<a [routerLink]="['/categories/addCategory']" mat-raised-button matTooltip="Add Category">Add category </a>
+		</button>
+		<button class="btn  btn-secondary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+			<i class="fa fa-filter"></i> Filter</button>
+	</ng-container>
+	<ng-container mPortletBody>
+			<div class="row" id="collapseExample" [ngbCollapse]="!isCollapsed">
+				<div class="m-form col-md-12">
+					<form class="row">
+	
+						<table class="table table-bordered table-hover">
+							<thead class="">
+								<tr>
+									<th>Category Name</th>
+									<th>Order</th>
+									<th> operations</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="text" placeholder="Category Name" class="form-control form-filter input-sm" id="username" name="username">
+									</td>
+	
+									<td>
+											<input type="text" placeholder="Order" class="form-control form-filter input-sm" id="email" name="email">
+										</td>
+									
+									
+									<td>
+										<div class="margin-bottom-5 in-b  serchbtnMar">
+											<button type="submit" class="btn btn-primary m-btn--icon mr-2">
+												<i class="la la-search"></i> Search</button>
+											<button type="button" class="btn btn-secondary m-btn--icon">
+												<i class="la la-close"></i>Reset</button>
+	
+										</div>
+	
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			</div>
+		</ng-container><!-- end::Header -->
+
+
+	<!-- start::Body (attribute: mPortletBody) -->
+	<ng-container mPortletBody>
+			<div class="mat-table__wrapper">
+					<mat-table class="mat-elevation-z8" [dataSource]="dataSource" matSort matSortDirection="asc" matSortDisableClear>
+						<ng-container matColumnDef="name">
+							<mat-header-cell *matHeaderCellDef mat-sort-header>Category</mat-header-cell>
+							<mat-cell *matCellDef="let category" >
+		
+								
+								<div class="m-widget4">
+		
+									<!--begin::Widget 14 Item-->
+									<div class="m-widget4__item">
+										<div class="m-widget4__img m-widget4__img--pic">
+											<img src="./assets/app/media/img/blog/blog4.jpg" alt="">
+										</div>
+										<div class="m-widget4__info">
+											<span class="m-widget4__title">
+												{{category.name}}
+		
+											</span>
+										</div>
+									</div>
+									<!--end::Widget 14 Item-->
+		
+								</div>
+		
+							</mat-cell>
+						</ng-container>
+		
+						<ng-container matColumnDef="arName">
+							<mat-header-cell *matHeaderCellDef mat-sort-header>Arabic Name</mat-header-cell>
+							<mat-cell *matCellDef="let category">
+							{{category.arName}}</mat-cell>
+						</ng-container>
+						<ng-container matColumnDef="order">
+								<mat-header-cell *matHeaderCellDef mat-sort-header>Order</mat-header-cell>
+								<mat-cell *matCellDef="let category">
+								{{category.order}}</mat-cell>
+							</ng-container>
+					
+					
+				
+		
+						<ng-container matColumnDef="actions">
+							<mat-header-cell *matHeaderCellDef>
+								Actions
+							</mat-header-cell>
+							<mat-cell *matCellDef="let category">
+									<button class="btn btn-secondary" color="edit" type="button" [routerLink]="['/countries/add']"  (click)="edit(user.id)" matTooltip="Edit">
+										<i class="fa fa-edit"></i>	
+										</button>&nbsp;
+		
+										<button class="btn btn-danger" color="warn" type="button" (click)="delete(user.id)" matTooltip="Delete">
+												<i class="fa fa-trash"></i>	
+										</button>
+							</mat-cell>
+						</ng-container>
+		
+						<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+						<mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+					</mat-table>
+		
+		
+				</div>
+		
+	
+	</ng-container>
+	<!-- end::Body -->
+</m-portlet>

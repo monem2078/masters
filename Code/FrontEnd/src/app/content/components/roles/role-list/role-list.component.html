@@ -1,0 +1,103 @@
+<m-portlet [options]="{headLarge: true}">
+	<!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text">
+				Roles list
+			</h3>
+		</div>
+	</ng-container>
+	<ng-container mPortletHeadTools>
+			<a  [routerLink]="['/roles/add']" type="button" class="btn btn-primary">
+					New Role
+				</a>
+				<button type="button" class="btn btn-secondary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">Filter</button>
+	</ng-container>
+	<!-- end::Header -->
+	<ng-container mPortletBody>
+			<div class="row" id="collapseExample" [ngbCollapse]="!isCollapsed">
+				<div class="m-form col-md-12">
+						<form class="row" novalidate #roleForm="ngForm" (ngSubmit)="getList()">
+
+							<table class="table table-bordered table-hover">
+								<thead class="">
+									<tr>
+											<th>English Name</th>
+											<th>Arabic Name</th>
+											<th> operations</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+												<input type="text" placeholder="Role name" class="form-control form-filter input-sm" id="rolename" name="rolename" [(ngModel)]="filterObject.SearchObject.role_name" #rolename="ngModel" >
+
+										</td>
+										<td>
+												<input type="text" placeholder="Role name ar" class="form-control form-filter input-sm" id="rolenamear" name="rolenamear" [(ngModel)]="filterObject.SearchObject.role_name_ar" #rolenamear="ngModel" >
+
+										</td>
+										<td>
+											<div class="margin-bottom-5 in-b  serchbtnMar">
+													<button type="submit" class="btn btn-primary m-btn--icon mr-2"> <i class="la la-search"></i> Search</button>
+													<button type="button" class="btn btn-secondary m-btn--icon" (click)=resetSearch()> <i class="la la-close"></i>Reset</button>
+
+
+											</div>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+				</div>
+			</div>
+		</ng-container>
+	<!-- start::Body (attribute: mPortletBody) -->
+	<ng-container mPortletBody>
+
+		<div class="mat-table__wrapper">
+			<mat-table class="lmat-elevation-z8" [dataSource]="dataSource" matSort matSortActive="id" matSortDirection="asc" matSortDisableClear>
+				<ng-container matColumnDef="role_name">
+					<th *matHeaderCellDef mat-sort-header class="mat-column-vinCode">Role Name</th>
+					<td *matCellDef="let role" class="mat-column-vinCode">{{role.role_name}}</td>
+				</ng-container>
+				<ng-container matColumnDef="role_name_ar">
+					<th *matHeaderCellDef mat-sort-header class="mat-column-vinCode">Role Name Ar</th>
+					<td *matCellDef="let role" class="mat-column-vinCode">{{role.role_name_ar}}</td>
+				</ng-container>
+
+				<ng-container matColumnDef="actions">
+					<th *matHeaderCellDef>
+						Actions
+					</th>
+					<td *matCellDef="let role">
+
+						<button class="btn btn-primary" color="edit" type="button" (click)="edit(role.id)" matTooltip="Edit">
+							Edit
+						</button>&nbsp;
+
+						<button class="btn btn-danger" color="warn" type="button" (click)="delete(role.id)" matTooltip="Delete">
+							Delete
+						</button>
+
+
+					</td>
+				</ng-container>
+
+				<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+				<mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+			</mat-table>
+
+
+		</div>
+
+		<!-- start: BOTTOM -->
+		<div class="mat-table__bottom">
+			<mat-spinner [diameter]="20" *ngIf="loading$ |async"></mat-spinner>
+			<mat-paginator [pageSize]="pageSize" [length]="paginatorTotal$" [showFirstLastButtons]="true"></mat-paginator>
+		</div>
+	</ng-container>
+
+	<!-- end::Body -->
+</m-portlet>

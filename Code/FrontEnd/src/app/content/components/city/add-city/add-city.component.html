@@ -1,0 +1,46 @@
+<m-portlet>
+	<!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text">
+				Add City
+			</h3>
+		</div>
+	</ng-container>
+	<ng-container mPortletHeadTools>
+
+	</ng-container>
+	<!-- end::Header -->
+
+	<!-- start::Body (attribute: mPortletBody) -->
+	<ng-container mPortletBody>	
+			<form class="m-form m-form--fit m-form--label-align-right">
+					<div class="form-group m-form__group">
+						<label for="Jobtitle">City English Name</label>
+						<input type="text" placeholder="English Name" class="form-control m-input m-input--solid" type="text">
+					</div>
+					<div class="form-group m-form__group">
+							<label for="Jobtitle">City Arabic Name</label>
+							<input type="text" placeholder="Arabic Name" class="form-control m-input m-input--solid" type="text">
+						</div>
+						<div class="form-group m-form__group">
+								<label for="Jobtitle">Country  </label>
+								<select  class="form-control m-input m-input--solid" >
+									<option>Egypt</option>
+									<option>Saudi Arabia</option>
+									</select>
+							</div>
+				
+					
+			
+					<div class="m-form__actions m-form__actions">
+						<button type="submit" class="btn primary-btn m-btn " [disabled]="submitted"> Save
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</button>
+						<button (click)="redirect()" type="button" class="btn m-btn  m--margin-left-10"> Cancel </button>
+					</div>
+				</form>
+		<!-- end: BOTTOM -->
+	</ng-container>
+	<!-- end::Body -->
+</m-portlet>

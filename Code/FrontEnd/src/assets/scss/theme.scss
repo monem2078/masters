@@ -1,0 +1,22 @@
+// fonts
+$font-stack: Helvetica, sans-serif;
+
+// colors
+$primary-color: #FFC400;
+$secondary-color: #5adb9a;
+$secondary-dark-color:#42c985;
+$primary-dark-color: rgb(248, 192, 7);
+$shadow-color:rgba(153, 153, 153, 0.11);
+$cancelbtn-color:#c4c5d6;
+$success-color:#7cecbb;
+$link-color:#36a3f7;
+$available-color:#4af1a8;
+$offline-color:#d6d6d6;
+$input-color:#575962;
+.PrimColor{
+	color:$primary-color;
+}
+.secondColor{
+	color:$secondary-color;
+}
+

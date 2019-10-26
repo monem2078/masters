@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02fff395-e766-46f7-967b-25dcf9d7deac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Mas</find>
+      <find>HttpModule</find>
+      <find>plat</find>
+      <find>masterSearch</find>
+      <find>mus</find>
+      <find>sub</find>
+      <find>cate</find>
+      <find>filterObject</find>
+      <find>ra</find>
+      <find>car</find>
+      <find>const</find>
+      <find>req</find>
+      <find>pla</find>
+      <find>form</find>
+      <find>FormsModule</find>
+      <find>dr</find>
+      <find>packa</find>
+      <find>dd</find>
+      <find>navv</find>
+      <find>upload</find>
+      <find>mast</find>
+      <find>drop</find>
+      <find>profile_image</find>
+      <find>aut</find>
+      <find>consol</find>
+      <find>conso</find>
+      <find>we</find>
+      <find>con</find>
+      <find>cur</find>
+      <find>p1</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Controllers/CountryController.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Services/CountryService.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/services/client/client.service.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/country.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/category.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Repositories/RoleRepository.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/reviews/reviews.component.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Models/MasterRating.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/reviews/reviews.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/Rate.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Models/ContactRequest.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/services/layout-utils.service.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/services/master/master.service.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/partials/content/general/modals/action-entity-dialog/action-entity-dialog.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/requests/requests.component.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/request.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/partials/content/general/action-natification/action-notification.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/pages.module.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/masters-page.module.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Models/Master.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/vendor/bosnadev/repositories/src/Bosnadev/Repositories/Eloquent/Repository.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/package.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/currency.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Controllers/CurrencyController.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Repositories/PackageRepository.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/masters.module.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/requests/requests.component.html" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Controllers/UploadController.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Services/ImageService.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Controllers/AdminMasterController.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/services/country/master.service.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/platform.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Controllers/PlatformController.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-list/master-list.component.html" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Services/MasterService.php" />
+        <option value="$PROJECT_DIR$/Code/Backend/app/Http/Repositories/MasterRepository.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-list/master-list.component.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/master/master-page.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-data/master-data.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/master/master-page.component.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-data/master-data.component.ts" />
+        <option value="$PROJECT_DIR$/Code/Backend/.gitignore" />
+        <option value="$PROJECT_DIR$/Code/Backend/routes/api.php" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/master.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/categories/categories.component.ts" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/categories/categories.component.html" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="77" />
+    <option name="y" value="47" />
+    <option name="width" value="1151" />
+    <option name="height" value="636" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="masters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="masters" type="462c0819:PsiDirectoryNode" />
+              <item name="categories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="masters" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Masters" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Masters" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="role" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tadqeeq" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/Code/FrontEnd/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Code/Backend/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/Code/FrontEnd/src/app/core/models" />
+      <recent name="$PROJECT_DIR$/Code/FrontEnd/src/app/core/services" />
+      <recent name="$PROJECT_DIR$/Code/Backend/app/Http/Services" />
+      <recent name="$PROJECT_DIR$/Code/FrontEnd/src/app/content/partials/content/general/modals" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02fff395-e766-46f7-967b-25dcf9d7deac" name="Default Changelist" comment="" />
+      <created>1557395964838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557395964838</updated>
+      <workItem from="1557395966187" duration="15078000" />
+      <workItem from="1557825010541" duration="39193000" />
+      <workItem from="1558427259693" duration="13865000" />
+      <workItem from="1558442177734" duration="1656000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="133492000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24942264" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="TypeScript" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Code/FrontEnd/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/Code/FrontEnd/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Services/BaseService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/currency.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Controllers/CurrencyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/package.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/master-list/master-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/master-list/master-list-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/vendor/bosnadev/repositories/src/Bosnadev/Repositories/Eloquent/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Repositories/PackageRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Repositories/ImageRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="69" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="69" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/public/uploads/1557922835_Screenshotfrom2019-04-1105-14-25.png" />
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Helpers/UploadHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/masters.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#969#1065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Services/MasterImageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/requests/requests.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Services/ImageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding>
+            <element signature="e#28#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Controllers/AdminMasterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="67" column="155" selection-start-line="67" selection-start-column="155" selection-end-line="67" selection-end-column="155" />
+          <folding>
+            <element signature="e#40#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Controllers/UploadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/services/master/master.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/services/country/country.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/platform.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Controllers/PlatformController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Controllers/Auth/AuthenticateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/node_modules/@angular/material/sort/typings/sort.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-list/master-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="229" column="77" selection-start-line="229" selection-start-column="62" selection-end-line="229" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Services/MasterService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="182" column="11" selection-start-line="179" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Repositories/BaseRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Repositories/MasterRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="183" column="27" selection-start-line="183" selection-start-column="27" selection-end-line="183" selection-end-column="27" />
+          <folding>
+            <element signature="e#32#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-list/master-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="e#213#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/requests/requests.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/reviews/reviews.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/app/Http/Models/Master.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/master/master-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/pages/masters/master/master-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+          <folding>
+            <element signature="e#1#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-data/master-data.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="5427" column="4" selection-start-line="5427" selection-start-column="4" selection-end-line="5427" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/artisan">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Backend/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/master.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/roles/role/role.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/roles/role/role.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/core/models/module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/categories/categories.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/master-data/master-data.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="n#ng-container#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/categories/categories.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/FrontEnd/src/app/content/components/masters/packages/packages.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

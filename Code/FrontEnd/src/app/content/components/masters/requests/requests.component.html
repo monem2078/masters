@@ -1,0 +1,29 @@
+<div class="requests"> 
+    
+      
+        <div class="m-widget3">
+                <div *ngFor="let request of master.contact_requests" class="m-widget3__item">
+                    <div class="m-widget3__header">
+                        <div class="m-widget3__user-img">
+                            <img class="m-widget3__img" src="assets/app/media/img/users/user1.jpg" alt="">
+                        </div>
+                        <div class="m-widget3__info">
+                            <span class="m-widget3__username">
+                                {{ request.name }}
+                            </span><br>
+                            <span class="m-widget3__time">
+                                    has requested your contacts info
+                            </span>
+                        </div>
+                        <span class="m-widget3__status m--font-info">
+                                {{ request.created_diff }}
+                        </span>
+                    </div>
+                    <div class="m-widget3__body mb-3" *ngIf="request.request_status_type_id == 1">
+                            <button type="button"  class="btn btn-primary" (click)="updateRequestStatus(2, request.request_id)">Accept </button>
+                            <button type="button"  class="btn btn-default" (click)="updateRequestStatus(3, request.request_id)">Reject </button>
+                    </div>
+                </div>
+            </div>
+
+</div>

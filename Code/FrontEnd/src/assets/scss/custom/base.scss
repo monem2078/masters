@@ -1,0 +1,29 @@
+.m-splash-screen {
+    background: #fdfdfd;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #ffc400!important;
+}
+
+.mat-progress-bar-fill::after {
+    background-color: #ffc400!important;
+}
+
+.m-widget3 .m-widget3__item .m-widget3__header .m-widget3__status i {
+    display: inline;
+}
+
+
+.m-widget19 .m-widget19__content .m-widget19__header .m-widget19__info .m-widget19__username {
+    margin-top: 1.4rem;
+}
+
+.m-widget19 .m-widget19__content .m-widget19__header .m-widget19__info .m-widget19__time {
+    margin-bottom: 1.4rem;
+}
+
+
+.btn{
+	min-width: unset;
+}

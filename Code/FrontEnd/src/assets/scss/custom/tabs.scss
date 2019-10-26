@@ -1,0 +1,12 @@
+@import "../theme";
+@import "../mixins";
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #FFC400;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16);
+}
+.nav.nav-pills .nav-link, .nav.nav-tabs .nav-link {
+    font-weight: 600;
+}

@@ -1,0 +1,156 @@
+<m-portlet [options]="{headLarge: true}">
+	<!-- start::Header (attributtes: mPortletHeadTitle|mPortletHeadTools) -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text">
+				Users list
+			</h3>
+		</div>
+	</ng-container>
+	<ng-container mPortletHeadTools>
+
+		<button type="button" class="btn btn-secondary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">Filter</button>
+	</ng-container>
+	<!-- end::Header -->
+
+
+	<!-- start::Body (attribute: mPortletBody) -->
+
+	<ng-container mPortletBody>
+		<div class="row" id="collapseExample" [ngbCollapse]="!isCollapsed">
+			<div class="m-form col-md-12">
+				<form class="row">
+
+					<table class="table table-bordered table-hover">
+						<thead class="">
+							<tr>
+								<th>User Name</th>
+								<th>Source</th>
+								<th>Location</th>
+								<th>Mobile</th>
+								<th> operations</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="text" placeholder="Uesrname" class="form-control form-filter input-sm" id="username" name="username">
+								</td>
+
+								<td width="200">
+									<ng-select class="" [searchable]="true" name="role">
+										<ng-option>Facebook</ng-option>
+										<ng-option>Linkedin</ng-option>
+									</ng-select>
+								</td>
+								<td width="200">
+									<ng-select class="" [searchable]="true" name="location">
+										<ng-option>Alexandria</ng-option>
+										<ng-option>Cairo</ng-option>
+									</ng-select>
+								</td>
+								<td>
+									<input type="text" placeholder="Email" class="form-control form-filter input-sm" id="email" name="email">
+								</td>
+								<td>
+									<div class="margin-bottom-5 in-b  serchbtnMar">
+										<button type="submit" class="btn btn-primary m-btn--icon mr-2">
+											<i class="la la-search"></i> Search</button>
+										<button type="button" class="btn btn-secondary m-btn--icon">
+											<i class="la la-close"></i>Reset</button>
+
+									</div>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+	</ng-container>
+
+	<ng-container mPortletBody>
+		<div class="mat-table__wrapper">
+			<mat-table class="mat-elevation-z8" [dataSource]="dataSource" matSort matSortDirection="asc" matSortDisableClear>
+				<ng-container matColumnDef="username">
+					<mat-header-cell *matHeaderCellDef mat-sort-header class="mat-column-vinCode">Name</mat-header-cell>
+					<mat-cell *matCellDef="let user" class="mat-column-vinCo de">
+
+						
+						<div class="m-widget4">
+
+							<!--begin::Widget 14 Item-->
+							<div class="m-widget4__item">
+								<div class="m-widget4__img m-widget4__img--pic">
+									<img src="./assets/app/media/img/users/user4.jpg" alt="">
+								</div>
+								<div class="m-widget4__info">
+									<span class="m-widget4__title">
+										{{user.username}}
+
+									</span>
+								</div>
+							</div>
+							<!--end::Widget 14 Item-->
+
+						</div>
+
+					</mat-cell>
+				</ng-container>
+
+				<ng-container matColumnDef="source">
+					<mat-header-cell *matHeaderCellDef mat-sort-header>source</mat-header-cell>
+					<mat-cell *matCellDef="let user">
+						<span class="m-widget3__status m--font-info">
+							<i class="fab fa-facebook"></i>
+							<!-- <i class="fab fa-linkedin"></i> -->
+						</span>{{user.source}}</mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="OS">
+					<mat-header-cell *matHeaderCellDef mat-sort-header>OS</mat-header-cell>
+					<mat-cell *matCellDef="let user">
+							<span class="m-widget3__status m--font-info">
+
+									<i class="fab fa-apple"></i>
+									<!-- <i class="fab fa-android"></i> -->
+											</span>Iphone
+										</mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Gender">
+					<mat-header-cell *matHeaderCellDef mat-sort-header>Gender</mat-header-cell>
+					<mat-cell *matCellDef="let user">Male</mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Mobile">
+					<mat-header-cell *matHeaderCellDef mat-sort-header>Mobile</mat-header-cell>
+					<mat-cell *matCellDef="let user">01009996612</mat-cell>
+				</ng-container>
+				<ng-container matColumnDef="Location">
+					<mat-header-cell *matHeaderCellDef mat-sort-header>Location</mat-header-cell>
+					<mat-cell mat-cell *matCellDef="let user">Alexandria, Egypt</mat-cell>
+				</ng-container>
+
+				<ng-container matColumnDef="actions">
+					<mat-header-cell *matHeaderCellDef>
+						Actions
+					</mat-header-cell>
+					<mat-cell *matCellDef="let user">
+						<button class="btn btn-danger" color="edit" type="button" matTooltip="Edit">
+							<i class="fa fa-ban"></i>
+						</button>
+
+
+					</mat-cell>
+				</ng-container>
+
+				<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+				<mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+			</mat-table>
+
+
+		</div>
+
+
+	</ng-container>
+	<!-- end::Body -->
+</m-portlet>
